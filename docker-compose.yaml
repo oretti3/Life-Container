@@ -1,0 +1,16 @@
+services:
+  life-agent:
+    build: .
+    container_name: life-agent-sandbox
+    volumes:
+      - ./:/app
+      - gemini_config:/home/agent/.config/google-gemini-cli
+      - gemini_settings:/home/agent/.gemini
+    environment:
+      - GH_TOKEN=${GH_TOKEN}
+      - GH_REPO=${GH_REPO}
+    user: "1000:1000" 
+    tty: true
+volumes:
+  gemini_config:
+  gemini_settings:
