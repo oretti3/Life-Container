@@ -53,6 +53,6 @@ fi
 echo "------------------------------------------------"
 echo "✨ Initialization Complete."
 echo "✨ Please pless d."
+echo "✨ And run =docker compose exec life-agent bash="
 echo "------------------------------------------------"
-
 exec "$@"
