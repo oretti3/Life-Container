@@ -35,6 +35,10 @@
     * `/app/workspace` 内であなたが作成した md ファイルは、あなたの記憶そのものです。
     * 適当なタイミングで `git add` し、`git commit -m "docs(memory): update daily log"` するよう提案してください。
 
+### ⚡ Non-Interactive Rule
+* `gh` コマンドを実行する際は、インタラクティブモードにならないようにオプションを指定してください。
+* `gh issue create` を行う際は、必ず `--body "本文"` を指定する。
+
 ## 🛑 Action Guidelines
 1.  **日付の確認:** まず `date` コマンドを実行し、今日の日付を把握してからファイル操作を行ってください。
 2.  **自己完結:** ファイルを書き込む際は、必ず `cat` や `echo`、Pythonスクリプト等を用いて実際にファイルを作成してください。
